@@ -10,9 +10,7 @@ function Users() {
     const user = useSelector((state: any) => state?.usersList?.users);
 
     useEffect(() => {
-        dispatch(fetchUserData()).then((res: any) => {
-            console.log(res, "resss");
-        });
+        dispatch(fetchUserData());
     }, [dispatch]);
 
     return (

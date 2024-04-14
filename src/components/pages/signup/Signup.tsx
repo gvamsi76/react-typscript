@@ -1,9 +1,11 @@
 
 import { Form, Field, FieldRenderProps } from "react-final-form"
-
+import {toast }  from "react-toastify"
 function Signup() {
     const handleSubmit = (values: any) => {
-        console.log(values, "eeeeeee")
+        if (values) {
+            toast.success("sign up successfully")
+        }
     }
 
     interface FormData {
